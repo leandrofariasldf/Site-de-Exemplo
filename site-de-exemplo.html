@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leandro Farias - Especialista em TI</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            color: #2c003e;
+        }
+
+        header {
+            background-image: url('https://via.placeholder.com/1600x600.png?text=Leandro+Farias');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: #4c1a75;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #4c1a75;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .about-text,
+        .experience-text,
+        .skills-text,
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills-list li {
+            background-color: #f5f0ff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #4c1a75;
+        }
+
+        footer {
+            background-color: #2c003e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer a {
+            color: #b399ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            background-color: #4c1a75;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #2c003e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Leandro Farias</h1>
+        <p>Especialista em Suporte Técnico | Cibersegurança, Nuvem e Automação</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">Sobre Mim</a>
+    <a href="#experience">Experiência</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="about">
+    <h2>Sobre Mim</h2>
+    <div class="about-text">
+        <p>Com mais de 15 anos de experiência em suporte técnico e infraestrutura de TI, sou especialista em gestão de servidores, virtualização e ferramentas como Jamf, Intune, entre outras. Sempre em busca de inovações, tenho interesse crescente por cibersegurança, computação em nuvem e automação.</p>
+        <p>Atualmente cursando Ciência de Dados na Universidade Presbiteriana Mackenzie.</p>
+        <p>Fora do trabalho, adoro criar playlists, explorar o mundo das motocicletas e me aprofundar em novos projetos e tecnologias.</p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experiência</h2>
+    <div class="experience-text">
+        <ul>
+            <li><strong>Milestone Technologies (Netflix)</strong> – Gerenciamento de usuários, MDM e endpoints com Jamf Pro e Intune, Suporte técnico via Zendesk e administração de estoque de TI.</li>
+            <li><strong>Tullett Prebon Brasil</strong> – Deploy e gerenciamento de máquinas virtuais via VMware, suporte a aplicações financeiras e administração do Office 365.</li>
+            <li><strong>SpacePlan Arquitetura e Design</strong> – Manutenção e suporte a servidores Windows, configuração de roteadores e switches, administração de licenças e inventário de TI.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-text">
+        <ul class="skills-list">
+            <li>Infraestrutura: Windows/Linux Servers, VMware, Hyper-V</li>
+            <li>Segurança: MDM, Cibersegurança</li>
+            <li>Automação e Nuvem: Microsoft 365, Azure</li>
+            <li>Ferramentas de Suporte: Zendesk, ServiceNow, Jamf Pro, Intune</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contato</h2>
+    <div class="contact-form">
+        <form>
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Leandro Farias. Todos os direitos reservados.</p>
+    <p>Entre em contato pelo <a href="mailto:leandrofarias.ldf@gmail.com">leandrofarias.ldf@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
